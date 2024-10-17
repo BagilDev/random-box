@@ -120,7 +120,7 @@ public final class ConfigUtil {
 
 		if (material == null && NMSUtil.getMinorVersion() < 13) {
 			try {
-				return Material.getMaterial(Integer.parseInt(id));
+				return Material.getMaterial(id);
 			} catch (NumberFormatException e) {
 				return null;
 			}
